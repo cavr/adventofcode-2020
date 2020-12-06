@@ -1,9 +1,5 @@
 const fs = require('fs')
 
-function dec2bin(dec) {
-    return (dec >>> 0).toString(2);
-}
-
 const find = () => {
     return new Promise((resolve, reject) => {
         fs.readFile('./input', 'utf8', ((err, data) => {
